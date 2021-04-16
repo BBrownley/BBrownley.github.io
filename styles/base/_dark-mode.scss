@@ -1,0 +1,61 @@
+.body-dark {
+  background-color: #090c10;
+  color: $font-face-color-dark;
+  h1,
+  h2 {
+    color: #f0f6ee;
+  }
+  strong,
+  span[class="primary"] {
+    color: $primary-color-dark;
+  }
+  .skill-tag {
+    background-color: $secondary-color-dark;
+    color: white;
+    font-weight: bold;
+  }
+  a {
+    border-bottom: 3px solid $primary-color-dark;
+    &:visited {
+      color: #f0f6ee;
+    }
+    &:hover {
+      background-color: $primary-color-dark;
+      color: white;
+    }
+  }
+  button.secondary {
+    background-color: $secondary-color-dark;
+    border: white;
+    &:hover {
+      background-color: $secondary-color-dark;
+      filter: brighten(110%);
+    }
+  }
+  .navigation ul li span:hover {
+    color: $primary-color-dark;
+  }
+  #theme-toggle {
+    color: $sun-color;
+    .sun {
+      display: inline-block;
+    }
+    .moon {
+      display: none;
+    }
+  }
+  .code-computer {
+    filter: brightness(0) invert(0.85);
+  }
+  footer {
+    background-color: #222222;
+    .alt-link {
+      color: #aaa;
+    }
+  }
+  @media (max-width: 740px) {
+    header {
+      background-color: darken(#090c10, 20%);
+    }
+  }
+}

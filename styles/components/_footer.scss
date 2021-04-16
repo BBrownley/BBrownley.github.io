@@ -1,0 +1,19 @@
+footer {
+  background-color: #444444;
+  padding: 2rem;
+  text-align: center;
+  .alt-link {
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    margin: 0 2rem;
+    color: #ccc;
+    i {
+      margin-right: 1rem;
+    }
+    &:hover {
+      background-color: transparent;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import "../abstracts";
+
+.skill-tag {
+  background-color: $secondary-color;
+  color: white;
+  border-radius: 100rem;
+  padding: 0 .5rem;
+  font-weight: bold;
+}

@@ -1,0 +1,6 @@
+dark mode
+
+primary: #826AED
+secondary: A8D4AD
+body: #aaa;
+headers: #eee;
