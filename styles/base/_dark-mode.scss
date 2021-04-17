@@ -59,4 +59,15 @@
       background-color: darken(#090c10, 20%);
     }
   }
+  .projects .project-images {
+    .outline-mobile {
+      background-image: url("/images/smartphone-light.svg");
+    }
+    .outline-tablet {
+      background-image: url("/images/tablet-light.svg");
+    }
+    .outline-desktop {
+      background-image: url("/images/computer-light.svg");
+    }
+  }
 }

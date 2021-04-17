@@ -12,7 +12,7 @@
       display: inline-block;
     }
     .outline-mobile {
-      background: url("/images/smartphone.svg");
+      background-image: url("/images/smartphone.svg");
       background-size: cover;
       background-position: center;
       height: 300px;
@@ -20,7 +20,7 @@
       position: relative;
     }
     .outline-tablet {
-      background: url("/images/tablet.svg");
+      background-image: url("/images/tablet.svg");
       background-size: cover;
       background-position: center;
       height: 300px;
@@ -31,7 +31,7 @@
       position: relative;
     }
     .outline-desktop {
-      background: url("/images/computer.svg");
+      background-image: url("/images/computer.svg");
       background-size: cover;
       background-position: center;
       height: 300px;
@@ -54,7 +54,7 @@
     width: 120px;
     content: " ";
     background-color: navy;
-    background: url("/images/designo-mobile.png");
+    background-image: url("/images/designo-mobile.png");
     background-size: cover;
     background-position-y: 0px;
   }
@@ -66,7 +66,7 @@
     width: 178px;
     content: " ";
     background-color: navy;
-    background: url("/images/designo-tablet.png");
+    background-image: url("/images/designo-tablet.png");
     background-size: cover;
     background-position-x: 180px;
   }
@@ -78,10 +78,18 @@
     width: 330px;
     content: " ";
     background-color: navy;
-    background: url("/images/designo-desktop.png");
+    background-image: url("/images/designo-desktop.png");
     background-size: cover;
     background-position-y: -0px;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
   }
 }
+
+// .body-dark {
+//   .outline-mobile {
+//     background: none;
+//     background-image: url("/images/smartphone-light.svg");
+//     border: 2px dashed;
+//   }
+// }
