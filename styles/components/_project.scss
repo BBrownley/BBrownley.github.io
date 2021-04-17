@@ -1,9 +1,87 @@
 .project {
   margin-bottom: 4rem;
+  display: flex;
+
   .project-desc {
-    max-width: 80ch;
+    max-width: 70ch;
+  }
+  .project-images {
+    width: 100%;
+    text-align: center;
+    > * {
+      display: inline-block;
+    }
+    .outline-mobile {
+      background: url("/images/smartphone.svg");
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      width: 170px;
+      position: relative;
+    }
+    .outline-tablet {
+      background: url("/images/tablet.svg");
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      width: 250px;
+      transform: rotate(-90deg);
+      margin-left: 3rem;
+      margin-right: 2rem;
+      position: relative;
+    }
+    .outline-desktop {
+      background: url("/images/computer.svg");
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      width: 350px;
+      margin-top: 3rem;
+      position: relative;
+    }
   }
   h3 {
     margin-bottom: 2rem;
+  }
+}
+
+.project-designo {
+  .outline-mobile div {
+    position: absolute;
+    top: 34px;
+    left: 25px;
+    height: 227px;
+    width: 120px;
+    content: " ";
+    background-color: navy;
+    background: url("/images/designo-mobile.png");
+    background-size: cover;
+    background-position-y: 0px;
+  }
+  .outline-tablet div {
+    position: absolute;
+    top: 40px;
+    right: 36px;
+    height: 209px;
+    width: 178px;
+    content: " ";
+    background-color: navy;
+    background: url("/images/designo-tablet.png");
+    background-size: cover;
+    background-position-x: 180px;
+  }
+  .outline-desktop div {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    height: 198px;
+    width: 330px;
+    content: " ";
+    background-color: navy;
+    background: url("/images/designo-desktop.png");
+    background-size: cover;
+    background-position-y: -0px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
   }
 }
