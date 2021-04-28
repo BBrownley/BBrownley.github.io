@@ -70,4 +70,12 @@
       background-image: url("/images/computer-light.svg");
     }
   }
+  .project .project-actions {
+    a {
+      border: 2px solid $primary-color-dark;
+      &:hover {
+        border: 2px solid $primary-color-dark;
+      }
+    }
+  }
 }
