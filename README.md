@@ -1,2 +1,2 @@
 # My portfolio
-[Live site](https://brownley.dev/)
+[Live site](https://www.brownley.dev/)
