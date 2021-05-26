@@ -91,6 +91,16 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -127,3 +137,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+// section {
+//   border: 2px dashed;
+// }
+
+// .project {
+//   border: 2px dashed red;
+// }

@@ -79,7 +79,7 @@ main {
 
 .about {
   // border: 2px dashed;
-  margin: 6rem 0;
+  margin: 4rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -107,6 +107,58 @@ main {
       background: url("../images/coding.svg") no-repeat center;
       color: green;
       // background-size: cover;
+    }
+  }
+}
+
+.contact {
+  text-align: center;
+  // border: 2px dashed;
+  .contact-form-wrapper {
+    // border: 2px dashed blue;
+    max-width: 1000px;
+    margin: 0 auto;
+    form {
+      text-align: center;
+      input,
+      textarea {
+        width: 100%;
+        padding: 1rem;
+        resize: none;
+        font-size: 1rem;
+        font-family: "Open Sans", sans-serif;
+      }
+      textarea {
+        height: 16rem;
+      }
+      .form-field {
+        text-align: left;
+        &:first-of-type {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+  label {
+    display: block;
+  }
+  #contact-submit {
+    width: 11rem;
+    margin-top: 3rem;
+    border-radius: 0;
+    border: 2px solid $primary-color;
+    transition: 0.25s;
+    background-color: transparent;
+    font-weight: bold;
+    &:hover {
+      color: white;
+      background-color: $primary-color;
+      cursor: pointer;
+    }
+    &:active,
+    :focus {
+      color: white;
+      background-color: $primary-color;
     }
   }
 }

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -44,7 +44,7 @@
     </header>
     <div class="wrapper">
       <main>
-        <h2 style="margin-top: 5rem;">WORK IN PROGRESS 😊</h2>
+        <!-- <h2 style="margin-top: 5rem;">WORK IN PROGRESS 😊</h2> -->
         <section class="about">
           <div class="about-info">
             <h2>About</h2>
@@ -80,7 +80,6 @@
                 site to provide the best user-friendly experience.
               </p>
               <br/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sapiente perspiciatis esse fuga rem eius autem inventore repellendus. Voluptatum, adipisci? Dolore quisquam commodi autem ea non eveniet dolorum saepe sunt quis aspernatur porro voluptate molestias debitis, obcaecati delectus eligendi magnam dignissimos ipsam ab omnis, numquam iure ut. Suscipit, amet iure! Inventore, ea vel et itaque temporibus corporis corrupti nemo perspiciatis tenetur expedita saepe quos eos voluptates, provident suscipit. Fugit facilis, illo architecto, quas animi nemo eaque culpa odio labore rerum pariatur placeat nobis minus nam praesentium libero perspiciatis! Dolorem debitis esse repellat nostrum exercitationem recusandae ab officiis dicta culpa! Pariatur!</p>
               <br/>
               <span class="skill-tag">React</span>
               <span class="skill-tag">Redux</span>
@@ -89,6 +88,10 @@
               <span class="skill-tag">MySQL</span>
               <span class="skill-tag">styled-components</span>
               <span class="skill-tag">axios</span>
+              <div class="project-actions">
+                <a href="https://github.com/BBrownley/designo" target="_blank">View code</a>
+                <a href="https://bbrownley.github.io/designo/" target="_blank">Live site</a>
+              </div>
             </div>
             <div class="project-images">
               <div class="outline-mobile"><div class="image-mobile"></div></div>
@@ -122,6 +125,24 @@
               <div class="outline-tablet"><div class="image-tablet"></div></div>
               <div class="outline-desktop"><div class="image-desktop"></div></div>
             </div>
+          </div>
+        </section>
+
+        <section class="contact">
+          <h2>Contact me</h2>
+          <div class="contact-form-wrapper">
+            <form action="#" id="contact-form" name="contact-form">
+              <div class="form-field">
+                <label for="email">Email: <span class="form-error" id="email-error"></span></label>
+                <input type="email" id="email" name="email">
+              </div>
+              <div class="form-field">
+                <label for="message">Message: <span class="form-error" id="message-error"></span></label>
+                <textarea name="message" id="message"></textarea>
+              </div>
+              <input type="submit" value="Send" id="contact-submit"/>
+            </form>
+            
           </div>
         </section>
 

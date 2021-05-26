@@ -101,3 +101,64 @@ const ImageScrollHandler = (() => {
     });
   });
 })();
+
+// Contact form
+
+const contactFormHandler = (() => {
+  const contactForm = document.getElementById("contact-form");
+
+  const emailField = document.getElementById("email");
+  const messageField = document.getElementById("message");
+
+  const emailError = document.getElementById("email-error");
+  const messageError = document.getElementById("message-error");
+
+  // Validate form values
+  const validateForm = (email, message) => {
+    let result = true;
+
+    // Inputs cannot be empty
+    if (email.trim().length === 0) {
+      errorHandler("EMAIL", "Cannot be empty");
+      result = false;
+    }
+
+    if (message.trim().length === 0) {
+      errorHandler("MESSAGE", "Say something! :)");
+      result = false;
+    }
+
+    return result;
+  };
+
+  // Handle errors
+  const errorHandler = (field, errorMsg) => {
+    if (field === "EMAIL") {
+      emailError.innerText = errorMsg;
+    }
+
+    if (field === "MESSAGE") {
+      messageError.innerText = errorMsg;
+    }
+  };
+
+  // Clear errors on input
+  emailField.addEventListener("input", e => {
+    emailError.innerText = "";
+  });
+
+  messageField.addEventListener("input", e => {
+    messageError.innerText = "";
+  });
+
+  contactForm.addEventListener("submit", e => {
+    e.preventDefault();
+
+    const email = e.target.elements.email.value;
+    const message = e.target.elements.message.value;
+
+    if (validateForm(email, message)) {
+      // Submit form
+    }
+  });
+})();
