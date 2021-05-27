@@ -23,20 +23,22 @@
       -webkit-box-shadow: 6px 6px 0px 0px lighten($primary-color, 25%),
         12px 12px 0px 0px lighten($primary-color, 40%);
       height: 100%;
+      background-size: 100%;
+      background-repeat: no-repeat;
     }
     .image-mobile {
       margin-right: 2rem;
 
       width: 120px;
       content: " ";
-      background-image: url("/images/designo-mobile.png");
+      // background-image: url("/images/designo-mobile.png");
       background-size: cover;
       background-position-y: 0px;
     }
     .image-desktop {
       width: 230px;
       content: " ";
-      background-image: url("/images/designo-desktop.png");
+      // background-image: url("/images/designo-desktop.png");
       background-size: cover;
       background-position-y: -0px;
     }
@@ -69,11 +71,32 @@
 }
 
 .project-designo {
-  .designo-mobile {
+  .image-mobile {
     background-image: url("/images/designo-mobile.png");
   }
-  .designo-desktop {
+  .image-desktop {
     background-image: url("/images/designo-desktop.png");
+  }
+}
+
+.project-invoice {
+  .image-mobile {
+    background-image: url("/images/invoice-mobile.png");
+    height: 225px;
+  }
+  .image-desktop {
+    background-image: url("/images/invoice-desktop.png");
+    height: 178px;
+  }
+}
+
+.project-redditto {
+  .image-mobile {
+    background-image: url("/images/redditto-mobile.png");
+  }
+  .image-desktop {
+    background-image: url("/images/redditto-desktop.png");
+    height: 180px;
   }
 }
 
