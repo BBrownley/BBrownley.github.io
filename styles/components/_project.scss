@@ -1,48 +1,44 @@
 .project {
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
   display: flex;
+  // border: 2px dashed;
+
+  .writeup {
+    margin-bottom: 1rem;
+  }
 
   .project-desc {
     max-width: 70ch;
   }
   .project-images {
     width: 100%;
-    text-align: center;
+    height: 300px;
+
+    text-align: right;
     > * {
       display: inline-block;
+      border: 5px solid $primary-color;
       box-shadow: 6px 6px 0px 0px lighten($primary-color, 25%),
         12px 12px 0px 0px lighten($primary-color, 40%);
       -webkit-box-shadow: 6px 6px 0px 0px lighten($primary-color, 25%),
         12px 12px 0px 0px lighten($primary-color, 40%);
       height: 100%;
     }
-    .outline-mobile {
-      background-image: url("/images/smartphone.svg");
-      background-size: cover;
-      background-position: center;
-      height: 300px;
-      width: 170px;
-      position: relative;
-    }
-    .outline-tablet {
-      background-image: url("/images/tablet.svg");
-      background-size: cover;
-      background-position: center;
-      height: 300px;
-      width: 250px;
-      transform: rotate(-90deg);
-      margin-left: 3rem;
+    .image-mobile {
       margin-right: 2rem;
-      position: relative;
-    }
-    .outline-desktop {
-      background-image: url("/images/computer.svg");
+
+      width: 120px;
+      content: " ";
+      background-image: url("/images/designo-mobile.png");
       background-size: cover;
-      background-position: center;
-      height: 300px;
-      width: 350px;
-      margin-top: 3rem;
-      position: relative;
+      background-position-y: 0px;
+    }
+    .image-desktop {
+      width: 230px;
+      content: " ";
+      background-image: url("/images/designo-desktop.png");
+      background-size: cover;
+      background-position-y: -0px;
     }
   }
   .project-actions {
@@ -73,40 +69,11 @@
 }
 
 .project-designo {
-  // border: 2px dashed;
-  padding-left: 2rem;
-  .image-mobile {
-    // position: absolute;
-    // top: 34px;
-    // left: 25px;
-
-    margin-right: 2rem;
-
-    width: 120px;
-    content: " ";
-    background-color: navy;
+  .designo-mobile {
     background-image: url("/images/designo-mobile.png");
-    background-size: cover;
-    background-position-y: 0px;
   }
-  .outline-tablet div {
-    position: absolute;
-    top: 40px;
-    right: 36px;
-    height: 209px;
-    width: 178px;
-    content: " ";
-    background-color: navy;
-    background-image: url("/images/designo-tablet.png");
-    background-size: cover;
-    background-position-x: 180px;
-  }
-  .image-desktop {
-    width: 230px;
-    content: " ";
+  .designo-desktop {
     background-image: url("/images/designo-desktop.png");
-    background-size: cover;
-    background-position-y: -0px;
   }
 }
 

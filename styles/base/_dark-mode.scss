@@ -87,11 +87,12 @@
   .projects .project-images {
     > * {
       display: inline-block;
-      box-shadow: 6px 6px 0px 0px lighten($primary-color-dark, 0),
+      box-shadow: 6px 6px 0px 0px lighten($primary-color-dark, 5%),
         12px 12px 0px 0px lighten($primary-color-dark, 10%);
-      -webkit-box-shadow: 6px 6px 0px 0px lighten($primary-color-dark, 0),
+      -webkit-box-shadow: 6px 6px 0px 0px lighten($primary-color-dark, 5%),
         12px 12px 0px 0px lighten($primary-color-dark, 10%);
       height: 100%;
+      border: 5px solid $primary-color-dark;
     }
     .outline-mobile {
       background-image: url("/images/smartphone-light.svg");
