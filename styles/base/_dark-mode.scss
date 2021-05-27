@@ -85,6 +85,14 @@
     }
   }
   .projects .project-images {
+    > * {
+      display: inline-block;
+      box-shadow: 6px 6px 0px 0px lighten($primary-color-dark, 0),
+        12px 12px 0px 0px lighten($primary-color-dark, 10%);
+      -webkit-box-shadow: 6px 6px 0px 0px lighten($primary-color-dark, 0),
+        12px 12px 0px 0px lighten($primary-color-dark, 10%);
+      height: 100%;
+    }
     .outline-mobile {
       background-image: url("/images/smartphone-light.svg");
     }

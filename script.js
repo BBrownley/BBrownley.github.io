@@ -46,60 +46,60 @@ const ImageScrollHandler = (() => {
     ".project-designo .outline-desktop div"
   );
 
-  const designoinitialPositions = {
-    mobile: parseInt(
-      window
-        .getComputedStyle(designoMobileImg)
-        .getPropertyValue("background-position-y")
-        .split("px")[0]
-    ),
-    tablet: parseInt(
-      window
-        .getComputedStyle(designoTabletImg)
-        .getPropertyValue("background-position-x")
-        .split("px")[0]
-    ),
-    desktop: parseInt(
-      window
-        .getComputedStyle(designoDesktopImg)
-        .getPropertyValue("background-position-y")
-        .split("px")[0]
-    )
-  };
+  // const designoinitialPositions = {
+  //   mobile: parseInt(
+  //     window
+  //       .getComputedStyle(designoMobileImg)
+  //       .getPropertyValue("background-position-y")
+  //       .split("px")[0]
+  //   ),
+  //   tablet: parseInt(
+  //     window
+  //       .getComputedStyle(designoTabletImg)
+  //       .getPropertyValue("background-position-x")
+  //       .split("px")[0]
+  //   ),
+  //   desktop: parseInt(
+  //     window
+  //       .getComputedStyle(designoDesktopImg)
+  //       .getPropertyValue("background-position-y")
+  //       .split("px")[0]
+  //   )
+  // };
 
   // Scroll
 
-  let increment = 0;
-  let scrolling = true;
+  // let increment = 0;
+  // let scrolling = true;
 
-  const scroll = () => {
-    if (!scrolling) return false;
-    designoMobileImg.style.backgroundPositionY = `-${designoinitialPositions.mobile +
-      increment}px`;
-    designoTabletImg.style.backgroundPositionX = `${designoinitialPositions.tablet +
-      increment}px`;
-    designoDesktopImg.style.backgroundPositionY = `-${designoinitialPositions.desktop +
-      increment}px`;
-    increment += 1;
-  };
+  // const scroll = () => {
+  //   if (!scrolling) return false;
+  //   designoMobileImg.style.backgroundPositionY = `-${designoinitialPositions.mobile +
+  //     increment}px`;
+  //   designoTabletImg.style.backgroundPositionX = `${designoinitialPositions.tablet +
+  //     increment}px`;
+  //   designoDesktopImg.style.backgroundPositionY = `-${designoinitialPositions.desktop +
+  //     increment}px`;
+  //   increment += 1;
+  // };
 
-  setInterval(scroll, 50);
+  // setInterval(scroll, 50);
 
   // Stop scrolling whenever user hovers over one of the images
 
-  designoImages.forEach(image => {
-    image.addEventListener("mouseenter", () => {
-      if (scrolling) {
-        clearInterval(scroll);
-        scrolling = false;
-      }
-    });
-    image.addEventListener("mouseleave", () => {
-      if (scrolling === false) {
-        scrolling = true;
-      }
-    });
-  });
+  // designoImages.forEach(image => {
+  //   image.addEventListener("mouseenter", () => {
+  //     if (scrolling) {
+  //       clearInterval(scroll);
+  //       scrolling = false;
+  //     }
+  //   });
+  //   image.addEventListener("mouseleave", () => {
+  //     if (scrolling === false) {
+  //       scrolling = true;
+  //     }
+  //   });
+  // });
 })();
 
 // Contact form

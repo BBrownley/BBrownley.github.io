@@ -10,6 +10,11 @@
     text-align: center;
     > * {
       display: inline-block;
+      box-shadow: 6px 6px 0px 0px lighten($primary-color, 25%),
+        12px 12px 0px 0px lighten($primary-color, 40%);
+      -webkit-box-shadow: 6px 6px 0px 0px lighten($primary-color, 25%),
+        12px 12px 0px 0px lighten($primary-color, 40%);
+      height: 100%;
     }
     .outline-mobile {
       background-image: url("/images/smartphone.svg");
@@ -68,11 +73,15 @@
 }
 
 .project-designo {
-  .outline-mobile div {
-    position: absolute;
-    top: 34px;
-    left: 25px;
-    height: 227px;
+  // border: 2px dashed;
+  padding-left: 2rem;
+  .image-mobile {
+    // position: absolute;
+    // top: 34px;
+    // left: 25px;
+
+    margin-right: 2rem;
+
     width: 120px;
     content: " ";
     background-color: navy;
@@ -92,19 +101,12 @@
     background-size: cover;
     background-position-x: 180px;
   }
-  .outline-desktop div {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    height: 198px;
-    width: 330px;
+  .image-desktop {
+    width: 230px;
     content: " ";
-    background-color: navy;
     background-image: url("/images/designo-desktop.png");
     background-size: cover;
     background-position-y: -0px;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
   }
 }
 
