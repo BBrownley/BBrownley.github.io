@@ -36,13 +36,30 @@ a {
   transition: 0.25s;
   color: $font-face-color;
 
-  &:visited {
+  &:not(.plain):visited {
     color: $font-face-color;
   }
 
-  &:hover {
+  &:not(.plain):hover {
     background-color: $primary-color;
     color: white;
+  }
+
+  // &[class="plain"] {
+  //   background-color: transparent;
+  //   border: none;
+  //   &:hover {
+  //     background-color: transparent;
+  //     color: default;
+  //   }
+  // }
+}
+
+a.plain {
+  background-color: transparent;
+  border: none;
+  &:hover {
+    background-color: transparent;
   }
 }
 

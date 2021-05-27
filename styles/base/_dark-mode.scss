@@ -49,13 +49,19 @@
       background-color: $primary-color-dark;
       color: white;
     }
+    &[class="plain"] {
+      background-color: transparent;
+      border: none;
+      &:hover {
+        background-color: transparent;
+      }
+    }
   }
-  button.secondary {
+  #resume-link {
     background-color: $secondary-color-dark;
     border: white;
     &:hover {
-      background-color: $secondary-color-dark;
-      filter: brighten(110%);
+      background-color: lighten($secondary-color-dark, 10%);
     }
   }
   .navigation ul li span:hover {
