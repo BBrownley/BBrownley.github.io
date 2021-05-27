@@ -131,18 +131,21 @@
         <section class="contact">
           <h2>Contact me</h2>
           <div class="contact-form-wrapper">
-            <form action="#" id="contact-form" name="contact-form">
+            <form id="contact-form" name="contact-form" action="https://formspree.io/f/meqvgejr"
+            method="POST">
               <div class="form-field">
                 <label for="email">Email: <span class="form-error" id="email-error"></span></label>
                 <input type="email" id="email" name="email">
               </div>
               <div class="form-field">
                 <label for="message">Message: <span class="form-error" id="message-error"></span></label>
-                <textarea name="message" id="message"></textarea>
+                <textarea name="message" id="message" form="contact-form"></textarea>
               </div>
+              <p class="form-status"></p>
               <input type="submit" value="Send" id="contact-submit"/>
             </form>
             
+            <p class="contact-cta">You can also email me at <a href="mailto:brendobrownley@gmail.com">brendobrownley@gmail.com</a>. I look forward to hearing from you!</p>
           </div>
         </section>
 

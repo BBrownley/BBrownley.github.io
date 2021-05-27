@@ -144,7 +144,7 @@ main {
   }
   #contact-submit {
     width: 11rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     border-radius: 0;
     border: 2px solid $primary-color;
     transition: 0.25s;
@@ -160,5 +160,12 @@ main {
       color: white;
       background-color: $primary-color;
     }
+  }
+  .form-status {
+    height: 2rem;
+    // border: 1px dashed;
+  }
+  .contact-cta {
+    margin-top: 3rem;
   }
 }

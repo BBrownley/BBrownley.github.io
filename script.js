@@ -106,6 +106,7 @@ const ImageScrollHandler = (() => {
 
 const contactFormHandler = (() => {
   const contactForm = document.getElementById("contact-form");
+  const status = document.querySelector(".form-status");
 
   const emailField = document.getElementById("email");
   const messageField = document.getElementById("message");
@@ -116,6 +117,14 @@ const contactFormHandler = (() => {
   // Validate form values
   const validateForm = (email, message) => {
     let result = true;
+
+    // Validate email
+    const mailformat = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if (!email.match(mailformat)) {
+      errorHandler("EMAIL", "Email is invalid");
+      result = false;
+    }
 
     // Inputs cannot be empty
     if (email.trim().length === 0) {
@@ -145,13 +154,35 @@ const contactFormHandler = (() => {
   // Clear errors on input
   emailField.addEventListener("input", e => {
     emailError.innerText = "";
+    status.innerText = "";
   });
 
   messageField.addEventListener("input", e => {
     messageError.innerText = "";
+    status.innerText = "";
   });
 
-  contactForm.addEventListener("submit", e => {
+  async function handleSubmit(event) {
+    event.preventDefault();
+
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: contactForm.method,
+      body: data,
+      headers: {
+        Accept: "application/json"
+      }
+    })
+      .then(response => {
+        status.innerHTML = "Thanks for your submission!";
+        contactForm.reset();
+      })
+      .catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form";
+      });
+  }
+
+  contactForm.addEventListener("submit", async e => {
     e.preventDefault();
 
     const email = e.target.elements.email.value;
@@ -159,6 +190,7 @@ const contactFormHandler = (() => {
 
     if (validateForm(email, message)) {
       // Submit form
+      handleSubmit(e);
     }
   });
 })();
