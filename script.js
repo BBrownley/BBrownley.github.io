@@ -194,3 +194,25 @@ const contactFormHandler = (() => {
     }
   });
 })();
+
+const navScrollHandler = (() => {
+  const navAbout = document.getElementById("nav-about");
+  const navProjects = document.getElementById("nav-projects");
+  const navContact = document.getElementById("nav-contact");
+
+  const aboutHeader = document.querySelector("section[class='about']");
+  const projectsHeader = document.querySelector("section[class='projects']");
+  const contactHeader = document.querySelector("section[class='contact']");
+
+  navAbout.addEventListener("click", () => {
+    aboutHeader.scrollIntoView();
+  });
+
+  navProjects.addEventListener("click", () => {
+    projectsHeader.scrollIntoView();
+  });
+
+  navContact.addEventListener("click", () => {
+    contactHeader.scrollIntoView();
+  });
+})();
