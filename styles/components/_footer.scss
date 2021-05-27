@@ -1,4 +1,4 @@
-footer {
+.footer {
   background-color: #444444;
   padding: 2rem;
   text-align: center;
@@ -18,10 +18,10 @@ footer {
   }
   a,
   a:visited {
-    color: white;
+    color: #ccc;
   }
   .credit {
-    color: white;
+    color: #ccc;
     margin-top: 1rem;
   }
 }
