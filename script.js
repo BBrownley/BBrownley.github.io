@@ -1,6 +1,6 @@
 const darkModeHandler = (() => {
   const body = document.querySelector("body");
-  let currentTheme = "light";
+  let currentTheme = "dark";
 
   const toggleDarkMode = () => {
     if (body.classList.contains("body-dark")) {

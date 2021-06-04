@@ -44,14 +44,16 @@ header {
       }
     }
     .navigation {
-      display: none;
+      // display: none;
+      .nav-item {
+        display: none;
+      }
     }
-    .hamburger-toggle {
-      display: inline-block;
-      margin-top: 8px;
+    #nav-resume {
+      padding: 1rem 0;
     }
   }
-  @media (max-width: 740px) {
+  @media (max-width: 850px) {
     align-items: center;
     padding: 1rem 2rem;
     background-color: #fafafa;
@@ -172,4 +174,17 @@ main {
 
 footer {
   margin-top: 8rem;
+}
+
+@media (max-width: 1130px) {
+  .about {
+    text-align: center;
+    justify-content: center;
+    .about-image {
+      display: none;
+    }
+    .about-info {
+      margin-right: 0;
+    }
+  }
 }

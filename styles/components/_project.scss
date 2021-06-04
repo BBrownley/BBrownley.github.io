@@ -1,7 +1,6 @@
 .project {
   margin-bottom: 8rem;
   display: flex;
-  // border: 2px dashed;
 
   .writeup {
     margin-bottom: 1rem;
@@ -100,10 +99,58 @@
   }
 }
 
-// .body-dark {
-//   .outline-mobile {
-//     background: none;
-//     background-image: url("/images/smartphone-light.svg");
-//     border: 2px dashed;
-//   }
-// }
+@media (max-width: 1130px) {
+  .projects {
+    text-align: center;
+  }
+  .project {
+    flex-direction: column;
+    align-items: center;
+    .project-images {
+      text-align: center;
+      margin-top: 6rem;
+      > * {
+        height: 100%;
+      }
+    }
+  }
+  .project-images .image-desktop {
+    @media (max-width: 455px) {
+      max-width: 100%;
+    }
+  }
+  .project-redditto {
+    .project-images {
+      .image-desktop {
+        width: 373px;
+      }
+      .image-mobile {
+        @media (max-width: 620px) {
+          display: none;
+        }
+      }
+    }
+  }
+  .project-invoice {
+    .project-images {
+      .image-mobile {
+        width: 164px;
+        @media (max-width: 680px) {
+          display: none;
+        }
+      }
+      .image-desktop {
+        width: 388px;
+      }
+    }
+  }
+  .project-designo {
+    .project-images {
+      .image-mobile {
+        @media (max-width: 455px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
