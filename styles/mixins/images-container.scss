@@ -2,7 +2,7 @@
   width: 60%;
   right: 0;
   position: absolute;
-  padding: 2rem;
+  padding: 0 2rem;
   display: flex;
   .image-wrapper {
     position: relative;
@@ -16,7 +16,7 @@
 
     margin-right: 1rem;
     padding-bottom: 56.25%;
-    .designo-mobile-img {
+    > div {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -31,7 +31,7 @@
 
     margin-left: 1rem;
     padding-bottom: 56.25%;
-    .designo-desktop-img {
+    > div {
       position: absolute;
       top: 0;
       bottom: 0;

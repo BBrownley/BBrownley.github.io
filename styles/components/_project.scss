@@ -76,35 +76,35 @@
   }
 }
 
-.project-designo {
-  .image-mobile {
-    background-image: url("/images/designo-mobile.png");
-  }
-  .image-desktop {
-    background-image: url("/images/designo-desktop.png");
-  }
-}
+// .project-designo {
+//   .image-mobile {
+//     background-image: url("/images/designo-mobile.png");
+//   }
+//   .image-desktop {
+//     background-image: url("/images/designo-desktop.png");
+//   }
+// }
 
-.project-invoice {
-  .image-mobile {
-    background-image: url("/images/invoice-mobile.png");
-    height: 225px;
-  }
-  .image-desktop {
-    background-image: url("/images/invoice-desktop.png");
-    height: 178px;
-  }
-}
+// .project-invoice {
+//   .image-mobile {
+//     background-image: url("/images/invoice-mobile.png");
+//     height: 225px;
+//   }
+//   .image-desktop {
+//     background-image: url("/images/invoice-desktop.png");
+//     height: 178px;
+//   }
+// }
 
-.project-redditto {
-  .image-mobile {
-    background-image: url("/images/redditto-mobile.png");
-  }
-  .image-desktop {
-    background-image: url("/images/redditto-desktop.png");
-    height: 180px;
-  }
-}
+// .project-redditto {
+//   .image-mobile {
+//     background-image: url("/images/redditto-mobile.png");
+//   }
+//   .image-desktop {
+//     background-image: url("/images/redditto-desktop.png");
+//     height: 180px;
+//   }
+// }
 
 @media (max-width: 1130px) {
   .projects {
@@ -163,7 +163,6 @@
 }
 
 .project-v2-wrapper {
-  padding: 0 4rem;
   max-width: 1920px;
   margin: 0 auto;
   margin-top: 4rem;
@@ -214,6 +213,20 @@
   }
   .images-container {
     @include images-container;
+    .redditto-mobile-img {
+      background: url("../../images/redditto-mobile.png");
+      background-position: top center;
+    }
+    .redditto-desktop-img {
+      background: url("../../images/redditto-desktop.png");
+    }
+    .invoice-mobile-img {
+      background: url("../../images/invoice-mobile.png");
+      background-position: top center;
+    }
+    .invoice-desktop-img {
+      background: url("../../images/invoice-desktop.png");
+    }
     .designo-mobile-img {
       background: url("../../images/designo-mobile.png");
     }
