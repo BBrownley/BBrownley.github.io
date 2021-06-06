@@ -1,0 +1,43 @@
+@mixin images-container {
+  width: 60%;
+  right: 0;
+  position: absolute;
+  padding: 2rem;
+  display: flex;
+  .image-wrapper {
+    position: relative;
+    > * {
+      background-size: cover;
+    }
+  }
+  .image-mobile-wrapper {
+    border: 2px solid $primary-color-dark;
+    flex: 1;
+
+    margin-right: 1rem;
+    padding-bottom: 56.25%;
+    .designo-mobile-img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-size: cover;
+    }
+  }
+  .image-desktop-wrapper {
+    border: 2px solid $primary-color-dark;
+    flex: 3;
+
+    margin-left: 1rem;
+    padding-bottom: 56.25%;
+    .designo-desktop-img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-size: cover;
+    }
+  }
+}
