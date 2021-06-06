@@ -1,3 +1,9 @@
+window.addEventListener("load", () => {
+  // Prevent body animations on load
+  const body = document.querySelector("body");
+  body.classList.remove("no-transition");
+});
+
 const darkModeHandler = (() => {
   const body = document.querySelector("body");
   let currentTheme = "dark";
@@ -16,8 +22,8 @@ const darkModeHandler = (() => {
     localStorage.setItem("theme", currentTheme);
   };
   const init = () => {
-    if (localStorage.getItem("theme") === "dark") {
-      body.classList.add("body-dark");
+    if (localStorage.getItem("theme") === "light") {
+      body.classList.remove("body-dark");
     }
   };
 

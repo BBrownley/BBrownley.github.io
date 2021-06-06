@@ -1,6 +1,13 @@
 .project {
   margin-bottom: 8rem;
   display: flex;
+  align-items: center;
+  width: 100%;
+
+  border: 2px dashed;
+  > * {
+    border: 2px dashed blue;
+  }
 
   .writeup {
     margin-bottom: 1rem;
@@ -149,6 +156,80 @@
       .image-mobile {
         @media (max-width: 455px) {
           display: none;
+        }
+      }
+    }
+  }
+}
+
+.project-v2-wrapper {
+  // border: 2px dashed green;
+  padding: 0 4rem;
+  max-width: 1920px;
+  margin: 0 auto;
+  .project-v2 {
+    position: relative;
+    padding-bottom: 50%;
+    // border: 2px dashed;
+    display: flex;
+    align-items: center;
+    > * {
+      position: absolute;
+      bottom: 4rem;
+      top: 4rem;
+    }
+    .desc {
+      // border: 2px dashed yellow;
+      width: 40%;
+      padding: 2rem 0 2rem 2rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      h3,
+      .writeup {
+        margin-bottom: 2rem;
+      }
+      .project-actions {
+        margin-top: 2rem;
+        a {
+          padding: 1rem 2rem;
+          border: 2px solid $primary-color-dark;
+          &:hover {
+            border: 2px solid $primary-color-dark;
+          }
+        }
+      }
+    }
+    .images-container {
+      // border: 2px dashed purple;
+      width: 60%;
+      right: 0;
+      position: absolute;
+      padding: 2rem;
+      display: flex;
+      .image-wrapper {
+        // border: 2px dashed cyan;
+        position: relative;
+      }
+      /* mobile x:x ratio, desktop y:y ratio */
+      .image-mobile-wrapper {
+        border: 2px solid $primary-color-dark;
+        flex: 1;
+        margin-right: 1rem;
+        .designo-mobile-img {
+          background-image: url("../../images/designo-mobile.png");
+          background-size: cover;
+          height: 100%;
+        }
+      }
+      .image-desktop-wrapper {
+        border: 2px solid $primary-color-dark;
+        flex: 3;
+        margin-left: 1rem;
+        .designo-desktop-img {
+          background-image: url("../../images/designo-desktop.png");
+          background-size: cover;
+          height: 100%;
         }
       }
     }
