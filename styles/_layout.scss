@@ -30,19 +30,17 @@ header {
     }
   }
   .name-title {
-    text-align: center;
+    text-align: left;
+    h1 {
+      margin-left: -3px;
+      font-family: "Raleway", sans-serif;
+    }
   }
   .hamburger-toggle,
   .name-title-min {
     display: none;
   }
   @media (max-width: 1400px) {
-    .name-title {
-      text-align: left;
-      h1 {
-        margin-left: -3px;
-      }
-    }
     .navigation {
       // display: none;
       .nav-item {
@@ -81,10 +79,10 @@ main {
 
 .about {
   // border: 2px dashed;
-  margin: 8rem 0;
+  margin: 8rem auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 2rem;
   > * {
     // border: 2px dashed;
@@ -116,7 +114,10 @@ main {
 
 .contact {
   text-align: center;
-  // border: 2px dashed;
+  padding: 0 2rem;
+  h2 {
+    @include header-text;
+  }
   .contact-form-wrapper {
     // border: 2px dashed blue;
     max-width: 800px;
