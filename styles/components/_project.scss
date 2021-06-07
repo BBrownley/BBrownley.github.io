@@ -256,6 +256,10 @@
         padding: 0;
       }
     }
+    .desc .container {
+      max-width: 50rem;
+      margin: 0 auto;
+    }
     .desc,
     .images-container {
       width: 100%;
@@ -264,6 +268,28 @@
     }
     .images-container {
       margin-top: 4.75rem;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .project-v2 .images-container .image-desktop-wrapper {
+    display: none;
+  }
+  .project-v2 .images-container .image-mobile-wrapper {
+    padding-bottom: 200%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .project-v2 .desc .container .project-actions {
+    flex-direction: column;
+    .project-action {
+      margin: 0;
+      &:nth-of-type(1) {
+        margin-bottom: 2rem;
+      }
     }
   }
 }

@@ -96,7 +96,7 @@ span[class="primary"] {
 }
 
 @media (max-width: 1130px) {
-  h2 {
+  h2:not(.title) {
     text-align: center;
   }
 }

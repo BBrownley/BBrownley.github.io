@@ -33,6 +33,9 @@ header {
     text-align: left;
     h1 {
       margin-left: -3px;
+    }
+    h1,
+    &-min {
       font-family: "Raleway", sans-serif;
     }
   }
@@ -79,7 +82,7 @@ main {
 
 .about {
   // border: 2px dashed;
-  margin: 8rem auto;
+  margin: 10rem auto 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -93,6 +96,9 @@ main {
     max-width: 80ch;
     margin-right: 2rem;
     flex: 1;
+  }
+  .resume-link-min {
+    display: none;
   }
   .about-image {
     margin-left: 2rem;
@@ -182,11 +188,23 @@ footer {
   .about {
     text-align: center;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
     .about-image {
       display: none;
     }
     .about-info {
       margin-right: 0;
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .about .resume-link-min {
+    display: inline-block;
+    margin-top: 2rem;
+  }
+  #nav-resume .resume-link {
+    display: none;
   }
 }
