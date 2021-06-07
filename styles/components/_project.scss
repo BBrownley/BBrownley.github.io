@@ -79,6 +79,7 @@
 .projects h2 {
   @include header-text;
   text-align: center;
+  margin-bottom: -6rem;
 }
 
 @media (max-width: 1130px) {
