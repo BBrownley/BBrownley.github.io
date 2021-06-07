@@ -45,6 +45,13 @@ a {
     color: white;
   }
 
+  &.resume-link {
+    color: white;
+    &:visited {
+      color: white;
+    }
+  }
+
   // &[class="plain"] {
   //   background-color: transparent;
   //   border: none;

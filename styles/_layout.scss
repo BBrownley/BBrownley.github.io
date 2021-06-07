@@ -82,20 +82,23 @@ main {
 
 .about {
   // border: 2px dashed;
+  max-width: 1920px;
   margin: 10rem auto 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 0 2rem;
   > * {
     // border: 2px dashed;
     // flex: 1;
   }
   .about-info {
-    // border: 2px dashed red;
     max-width: 80ch;
     margin-right: 2rem;
     flex: 1;
+    h2 {
+      @include header-text;
+    }
   }
   .resume-link-min {
     display: none;
@@ -203,6 +206,7 @@ footer {
   .about .resume-link-min {
     display: inline-block;
     margin-top: 2rem;
+    color: white;
   }
   #nav-resume .resume-link {
     display: none;

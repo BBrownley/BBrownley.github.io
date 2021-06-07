@@ -80,7 +80,7 @@
     filter: brightness(0) invert(0.85);
   }
   footer {
-    background-color: #222222;
+    background-color: black;
     .alt-link {
       color: #aaa;
     }
@@ -90,31 +90,17 @@
       background-color: darken(#090c10, 20%);
     }
   }
-  .projects .project-images {
-    > * {
-      display: inline-block;
-      box-shadow: 6px 6px 0px 0px lighten($primary-color-dark, 5%),
-        12px 12px 0px 0px lighten($primary-color-dark, 10%);
-      -webkit-box-shadow: 6px 6px 0px 0px lighten($primary-color-dark, 5%),
-        12px 12px 0px 0px lighten($primary-color-dark, 10%);
-      border: 5px solid $primary-color-dark;
-    }
-    .outline-mobile {
-      background-image: url("/images/smartphone-light.svg");
-    }
-    .outline-tablet {
-      background-image: url("/images/tablet-light.svg");
-    }
-    .outline-desktop {
-      background-image: url("/images/computer-light.svg");
-    }
-  }
-  .project .project-actions {
-    a {
+
+  .project-v2-wrapper .project-v2 {
+    .desc .project-actions a {
       border: 2px solid $primary-color-dark;
       &:hover {
         border: 2px solid $primary-color-dark;
       }
+    }
+    .image-mobile-wrapper,
+    .image-desktop-wrapper {
+      border: 5px solid $primary-color-dark;
     }
   }
 }

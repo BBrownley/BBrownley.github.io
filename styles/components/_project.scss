@@ -76,36 +76,6 @@
   }
 }
 
-// .project-designo {
-//   .image-mobile {
-//     background-image: url("/images/designo-mobile.png");
-//   }
-//   .image-desktop {
-//     background-image: url("/images/designo-desktop.png");
-//   }
-// }
-
-// .project-invoice {
-//   .image-mobile {
-//     background-image: url("/images/invoice-mobile.png");
-//     height: 225px;
-//   }
-//   .image-desktop {
-//     background-image: url("/images/invoice-desktop.png");
-//     height: 178px;
-//   }
-// }
-
-// .project-redditto {
-//   .image-mobile {
-//     background-image: url("/images/redditto-mobile.png");
-//   }
-//   .image-desktop {
-//     background-image: url("/images/redditto-desktop.png");
-//     height: 180px;
-//   }
-// }
-
 .projects h2 {
   @include header-text;
   text-align: center;
@@ -168,7 +138,13 @@
 }
 
 .projects {
-  margin-top: 10.5rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  .projects-footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0 2rem;
+  }
 }
 
 .project-v2-wrapper {
@@ -212,9 +188,9 @@
         }
         a {
           padding: 1rem 2rem;
-          border: 2px solid $primary-color-dark;
+          border: 2px solid $primary-color;
           &:hover {
-            border: 2px solid $primary-color-dark;
+            border: 2px solid $primary-color;
           }
         }
       }

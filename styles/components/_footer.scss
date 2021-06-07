@@ -1,5 +1,5 @@
 .footer {
-  background-color: #444444;
+  background-color: #0d1821;
   padding: 2rem;
   text-align: center;
   .alt-link {
@@ -18,11 +18,17 @@
   }
   a,
   a:visited {
-    color: #ccc;
+    color: #aaa;
+  }
+  a:hover {
+    color: white;
   }
   .credit {
-    color: #ccc;
+    color: white;
     margin-top: 1rem;
+    a {
+      color: white;
+    }
   }
 }
 

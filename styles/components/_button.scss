@@ -1,11 +1,11 @@
 @import "../abstracts";
 
-.resume-link {
+.resume-link, a.resume-link {
   padding: 0.5rem 2rem;
   color: white;
   border: none;
   border-radius: 100rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 1rem;
   background-color: $secondary-color;
