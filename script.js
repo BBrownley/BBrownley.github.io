@@ -131,19 +131,30 @@ const navScrollHandler = (() => {
   const navProjects = document.getElementById("nav-projects");
   const navContact = document.getElementById("nav-contact");
 
-  const aboutHeader = document.querySelector("section[class='about']");
-  const projectsHeader = document.querySelector("section[class='projects']");
-  const contactHeader = document.querySelector("section[class='contact']");
+  const aboutHeader = document.querySelector("section[class='about'] h2");
+  const projectsHeader = document.querySelector("section[class='projects'] h2");
+  const contactHeader = document.querySelector("section[class='contact'] h2");
+
+  const yOffset = -32;
 
   navAbout.addEventListener("click", () => {
-    aboutHeader.scrollIntoView();
+    const y =
+      aboutHeader.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({ top: y, behavior: "smooth" });
   });
 
   navProjects.addEventListener("click", () => {
-    projectsHeader.scrollIntoView();
+    const y =
+      projectsHeader.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({ top: y, behavior: "smooth" });
   });
 
   navContact.addEventListener("click", () => {
-    contactHeader.scrollIntoView();
+    const y =
+      contactHeader.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({ top: y, behavior: "smooth" });
   });
 })();
