@@ -72,6 +72,11 @@ header {
       display: inline-block;
     }
   }
+  @media (max-width: 600px) {
+    .name-title-min {
+      margin: 0 auto;
+    }
+  }
 }
 
 main {
@@ -117,6 +122,20 @@ main {
       background: url("../images/coding.svg") no-repeat center;
       color: green;
       // background-size: cover;
+    }
+  }
+}
+
+.freelance {
+  text-align: center;
+  div {
+    // border: 2px solid $primary-color;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-bottom: 4rem;
+    h2 {
+      margin-bottom: 0;
     }
   }
 }
