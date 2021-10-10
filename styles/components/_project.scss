@@ -180,11 +180,9 @@
         display: flex;
         > * {
           flex: 1;
-          &:nth-of-type(1) {
-            margin-right: 1rem;
-          }
-          &:nth-of-type(2) {
-            margin-left: 1rem;
+          margin-right: 2rem;
+          &:last-of-type {
+            margin-right: 0;
           }
         }
         a {
@@ -205,6 +203,13 @@
     }
     .redditto-desktop-img {
       background: url("../../images/redditto-desktop.png");
+    }
+    .audiophile-mobile-img {
+      background: url("../../images/audiophile-mobile.png");
+      background-position: top center;
+    }
+    .audiophile-desktop-img {
+      background: url("../../images/audiophile-desktop.png");
     }
     .invoice-mobile-img {
       background: url("../../images/invoice-mobile.png");
